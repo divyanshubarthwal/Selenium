@@ -19,7 +19,12 @@ public class SeleniumIntroduction {
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
 		driver.quit();
+		
+		
 /*
+ close()->closes only that current window
+ quit()->closes all the windows opened by selenium
+ 
  ChromeDriver driver=new ChromeDriver();
  driver object here has access to all the methods of chrome driver so chrome methods will dont work if we change the browser
  

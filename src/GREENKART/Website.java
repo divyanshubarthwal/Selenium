@@ -2,6 +2,7 @@ package GREENKART;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,8 +17,8 @@ public class Website {
 		String[] itemsNeeded= {"Cucumber","Brocolli","Beetroot"};
 
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
-
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+	//	Thread.sleep(3000);
 
 		addItems(driver,itemsNeeded);
 

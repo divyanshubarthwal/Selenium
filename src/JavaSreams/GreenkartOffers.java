@@ -27,7 +27,11 @@ public class GreenkartOffers {
 		
 		List<String> sortedList=originalList.stream().sorted().collect(Collectors.toList());
 		Assert.assertTrue(originalList.equals(sortedList));
+		
+		
 		List<String> price;
+		
+		
 		// scan the name column with getText ->Beans->print the price of the Rice
 		do {
 			List<WebElement> rows=driver.findElements(By.xpath("//tbody/tr/td[1]"));
